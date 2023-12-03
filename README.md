@@ -57,7 +57,7 @@ class LSTM(nn.Module):
        return x
 ```
 
-## test_generation.py -- 단어 임베딩
+## text_preprocessing.py -- 단어 전처리
 
 ```
 import numpy as np
