@@ -1,5 +1,20 @@
 # LSTM_Sentence_Generation
 
+## (pre) 데이터 살펴보기
+
+```
+import pandas as pd
+import os
+import string
+
+df = pd.read_csv("ArticlesApril2017.csv")
+print(df.columns)
+```
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/399a4b6d-2faa-45f3-adfd-36167c256b3f)
+
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/58a91fa8-c3c1-46ed-9678-797bf0ada445)
+
+
 ## model.py -- LSTM 모델 정의
 
 ```
@@ -223,6 +238,7 @@ plt.ylabel("Loss")
 plt.legend()
 plt.show()
 ```
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/24218ba8-6340-4bb1-8db8-0ef5bfe81009)
 
 ## test.py --모델 테스트
 
@@ -266,3 +282,5 @@ def generate(model, BOW, string="finding an ", strlen=10):
 model.load_state_dict(torch.load("lstm.pth", map_location=device))
 pred = generate(model, dataset.BOW)
 ```
+
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/1fcec743-f380-4e5e-9576-cca2a8f71c2d)
