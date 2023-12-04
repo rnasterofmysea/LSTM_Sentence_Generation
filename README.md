@@ -1,6 +1,15 @@
 # LSTM_Sentence_Generation
 
-## (pre) 데이터 살펴보기
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/136e6b8b-6a65-46c7-8854-e00866042513)
+
+
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/70c43b40-6d11-400a-bed3-05bc8e1a545a)
+
+
+## 시스템 구조
+
+
+### (pre) 데이터 살펴보기
 
 ```
 import pandas as pd
@@ -15,7 +24,7 @@ print(df.columns)
 ![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/58a91fa8-c3c1-46ed-9678-797bf0ada445)
 
 
-## model.py -- LSTM 모델 정의
+### model.py -- LSTM 모델 정의
 
 ```
 import torch
@@ -57,7 +66,7 @@ class LSTM(nn.Module):
        return x
 ```
 
-## text_preprocessing.py -- 단어 전처리
+### text_preprocessing.py -- 단어 전처리
 
 ```
 import numpy as np
@@ -121,7 +130,7 @@ class TextGeneration(Dataset):
         return data, label
 ```
 
-## utill.py --학습용 데이터셋 정의
+### utill.py --학습용 데이터셋 정의
 
 ```
 class CustomTextDataset(Dataset):
@@ -151,7 +160,7 @@ def AllocateDataset(full_data, train_size, valid_size, test_size):
   return dataset
 ```
 
-## train.py -- 모델 학습하기
+### train.py -- 모델 학습하기
 
 ```
 import tqdm
@@ -223,7 +232,7 @@ for epoch in range(total_epoch):
 torch.save(model.state_dict(), "lstm.pth")
 ```
 
-## 학습 결과 분석
+### 학습 결과 분석
 
 ```
 import matplotlib.pyplot as plt
@@ -256,7 +265,7 @@ avg_test_loss = test_loss / len(test_loader)
 print(f"Test Loss = {avg_test_loss}")
 ```
 
-## predict.py --문장 생성하기
+### predict.py --문장 생성하기
 
 ```
 def generate(model, BOW, string="finding an ", strlen=10):
