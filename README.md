@@ -272,6 +272,8 @@ for epoch in range(total_epoch):
 torch.save(model.state_dict(), "lstm.pth")
 ```
 
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/a0cfa521-dff9-4d92-9b6a-cd976be4f23a)
+
 ### 학습 결과 시각화
 
 ```
@@ -317,6 +319,8 @@ plt.legend()
 plt.show()
 
 ```
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/fee73d14-e41c-493c-b8ee-1b127fbc8a85)
+
 
 ### 테스트 _ test.py
 
@@ -336,6 +340,9 @@ with torch.no_grad():
 avg_test_loss = test_loss / len(test_loader)
 print(f'테스트 손실: {avg_test_loss}')
 ```
+
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/30d2753d-0a9a-42c2-b3c7-8007510d6b07)
+
 
 ### 문장 생성하기 predict.py
 
@@ -363,3 +370,4 @@ def generate(model, BOW, string="finding my ", strlen=2):
 model.load_state_dict(torch.load("lstm.pth", map_location=device))
 pred = generate(model, dataset.BOW)
 ```
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/48c58c2d-9a28-4678-8357-d65b3f240850)
