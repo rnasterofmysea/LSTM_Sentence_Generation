@@ -6,6 +6,21 @@
 ![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/70c43b40-6d11-400a-bed3-05bc8e1a545a)
 
 
+## LSTM 모델 구조
+- 특징: 4개의 gate(state)가 존재한다.
+- 기울기가 0으로 수렴하는 것을 방지하기 위해 
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/707ab62a-c318-4ea0-92d3-8c32f02e4b75)
+
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/ee33f009-3ac3-428b-8d1c-6707b9eea5e2)
+
+- Gate
+- 1. forget gate(f): 과거 정보를 잊기 위한 게이트
+  2. input gate(i): 현재 정보를 기억하기 위한 게이트.
+  3. output gate(o): 최종 결과를 출력하기 위한 게이트
+
+- cell state
+- 이전 상태에서 현재 상태까지 유지되는 정보의 흐름을 나타냄
+
 ## 시스템 구조
 ![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/9d11ea30-dbff-48f6-bf3b-5fc2925f1efd)
 
