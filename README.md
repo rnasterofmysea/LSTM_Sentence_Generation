@@ -27,6 +27,8 @@
 
 ### (pre) 데이터 살펴보기
 
+- 뉴욕 타임스 코멘트 데이터
+https://www.kaggle.com/aashita/nyt-comments
 ```
 import pandas as pd
 import os
@@ -388,3 +390,21 @@ model.load_state_dict(torch.load("lstm.pth", map_location=device))
 pred = generate(model, dataset.BOW)
 ```
 ![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/48c58c2d-9a28-4678-8357-d65b3f240850)
+
+
+# 프로젝트 파일
+
+https://drive.google.com/file/d/1X0vXGvfY5h9SjGd1OXdWVwTAsWy3L3Dv/view?usp=sharing
+
+# 참고
+
+- 딥러닝을 이용한 자연어처리 입문
+  https://wikidocs.net/22650
+
+-[Deep Learning] Long Short-Term Memory Model (LSTM)
+  https://medium.com/dovvie/deep-learning-long-short-term-memory-model-lstm-d4ee2f005973
+
+- ratsgo's blog
+  https://ratsgo.github.io/natural%20language%20processing/2017/03/09/rnnlstm/
+
+- 서적: 《Must Have 텐초의 파이토치 딥러닝 특강》
