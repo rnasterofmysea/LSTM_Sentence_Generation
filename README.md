@@ -180,6 +180,8 @@ def data_split(dataset,args):
 
 ### 모델 학습하기 --train.py
 
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/d6ebe720-b5ec-494a-a6ea-61b6a9642252)
+
 ```
 import torch
 import tqdm
