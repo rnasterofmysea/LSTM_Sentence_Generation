@@ -2,8 +2,13 @@
 
 ![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/136e6b8b-6a65-46c7-8854-e00866042513)
 
+계획
 
 ![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/70c43b40-6d11-400a-bed3-05bc8e1a545a)
+
+실행
+
+![image](https://github.com/rnasterofmysea/LSTM_Sentence_Generation/assets/81907470/eca8226b-b46f-409a-8f36-0bbcfecc8d8d)
 
 
 ## LSTM 모델 구조
